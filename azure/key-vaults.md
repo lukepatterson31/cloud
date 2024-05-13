@@ -1,5 +1,10 @@
 # Azure Key Vaults
 
+Documentation
+
+https://azure.microsoft.com/en-us/documentation/services/key-vault/
+
+
 ### Creating an Azure Key Vault
 
 Set the subscription context to an existing subscription
