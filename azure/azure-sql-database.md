@@ -20,4 +20,4 @@ Configure a firewall rule for Azure services
 
 Create a database on the server
 
-`az sql db create --resource-group "resource-group" --server "sql-server-name" --name "DbName" --edition "Basic"
+`az sql db create --resource-group "resource-group" --server "sql-server-name" --name "DbName" --edition "Basic"`
