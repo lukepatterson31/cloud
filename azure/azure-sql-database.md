@@ -1,6 +1,6 @@
 # Azure SQL Database
 
-### Create Azure SQL databases
+### Create Azure SQL databases Azure CLI
 
 Login and set context
 
