@@ -64,6 +64,6 @@ The previous command is asynchronous, check the status
 
 `Get-AzKeyVaultCertificateOperation -VaultName "alias-orgname-keyvault" -Name "CertificateName"`
 
-### Retrieving a public key for a certificate
+### Retrieving a public key for a certificate (thumbprint)
 
-`Get-AzKevaultCertificate -VaultName "alias-orgname-keyvault" -Name "CertificateName"`
+`Get-AzKeyVaultCertificate -VaultName "alias-orgname-keyvault" -Name "CertificateName"`
