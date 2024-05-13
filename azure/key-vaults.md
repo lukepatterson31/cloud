@@ -41,3 +41,29 @@ List all secrets in a vault (filter values with `| select Name, Id` etc.)
 Retrieve a secret's value
 
 `Get-AzKeyVaultSecret -VaultName "alias-orgname-keyvault" -Name "SecretName" -AsPlainText`
+
+### Creating and storing certificates in Key Vault
+
+Login with Azure Account
+
+`Connect-AzAccount`
+
+Set the subscription context to an existing subscription
+
+`Set-AzContext -SubscriptionName "Subscription Name Here"`
+
+Create a certificate policy
+
+`$policy = New-AzKeyVaultCertificatePolicy -SubjectName "CN=aliasTest" -IssuerName Self -ValidityInMonths 12`
+
+Add a certificate
+
+`Add-AzKeyVaultCertificate -VaultName "alias-orgname-keyvault" -Name "CertificateName" -CertificatePolicy $policy`
+
+The previous command is asynchronous, check the status
+
+`Get-AzKeyVaultCertificateOperation -VaultName "alias-orgname-keyvault" -Name "CertificateName"`
+
+### Retrieving a public key for a certificate
+
+`Get-AzKevaultCertificate -VaultName "alias-orgname-keyvault" -Name "CertificateName"`
