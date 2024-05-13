@@ -27,3 +27,19 @@ Check the address space and subnets
 $virtualNetwork.AddressSpace
 $virtualNetwork.Subnets
 ```
+
+### Security Groups
+
+[Tutorial](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic)
+
+**Application Security Group (ASG)**
+
+Define security controls at the application level, useful for grouping VMs together by purpose (web server, SQL server, etc.)
+
+**Network Security Group (NSG)**
+
+Filter network traffic to and from Azure resources. Can be associated with subnets or individual VMs (more granular)
+
+ASGs and NSGs are *not* mutually exclusive
+
+
