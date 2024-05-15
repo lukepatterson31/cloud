@@ -28,6 +28,6 @@ Kusto cluster
 
 ### Web App Config
 
-**Set envrionment variables"
+**Set envrionment variables**
 
-`az webapp config appsettings set --resource-group <resource-group-name> --name <web-app-name> --settings ENVIRONMENT_VARIABLE=VALUE
+`az webapp config appsettings set --resource-group <resource-group-name> --name <web-app-name> --settings ENVIRONMENT_VARIABLE=VALUE`
